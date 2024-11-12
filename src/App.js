@@ -5,6 +5,7 @@ import { TercerComponente } from './componentes/TercerComponente';
 import { MiPrimerEstado } from './componentes/MiPrimerEstado';
 import MiSegundoEstado from './componentes/MiSegundoEstado';
 import ContadorEstado from './componentes/ContadorEstado';
+import ListaEstado from './componentes/ListaEstado';
 
 function App() {
   const fichaMedica={grupoSanguineo:'A', alergia: 'Ninguna'}
@@ -20,6 +21,7 @@ function App() {
         <MiPrimerEstado></MiPrimerEstado>
         <MiSegundoEstado></MiSegundoEstado>
         <ContadorEstado></ContadorEstado>
+        <ListaEstado></ListaEstado>
       </header>
     </div>
   );
