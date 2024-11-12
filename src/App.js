@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import SaludarComponente from './componentes/SaludarComponente';
+import { TercerComponente } from './componentes/TercerComponente';
+import { MiPrimerEstado } from './componentes/MiPrimerEstado';
+import MiSegundoEstado from './componentes/MiSegundoEstado';
 
 function App() {
+  const fichaMedica={grupoSanguineo:'A', alergia: 'Ninguna'}
   return (
     <div className="App">
       <header className="App-header">
@@ -9,14 +14,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <SaludarComponente name='Erick'></SaludarComponente>
+        <TercerComponente name='Erick' lastName='Ruiz' ficha={fichaMedica}></TercerComponente>
+        <MiPrimerEstado></MiPrimerEstado>
+        <MiSegundoEstado></MiSegundoEstado>
       </header>
     </div>
   );
